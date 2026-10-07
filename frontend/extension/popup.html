@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TrustNet Fact-Checker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="ext-header">
+    <span class="ext-title">TrustNet</span>
+    <span class="ext-badge">Chrome v3</span>
+  </div>
+
+  <textarea id="claimInput" className="ext-textarea" placeholder="Highlight text on page or paste claim here..."></textarea>
+  <button id="verifyBtn" className="ext-btn">Verify Credibility</button>
+
+  <div id="loader" className="res-card hidden" style="text-align: center; color: var(--text-secondary);">
+    Analyzing evidence & NLI stances...
+  </div>
+
+  <div id="resultCard" className="res-card hidden">
+    <div>
+      <span id="verdictBadge" className="res-verdict">--</span>
+      <span id="confidencePill" className="res-conf">--%</span>
+    </div>
+    <div style="clear: both;"></div>
+    <p id="summaryText" className="res-summary"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

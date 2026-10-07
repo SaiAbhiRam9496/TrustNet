@@ -1,0 +1,130 @@
+:root {
+  --bg-primary: #09090b;
+  --bg-card: #121215;
+  --bg-inset: #1a1a1e;
+  --border-color: #27272a;
+  --text-primary: #f4f4f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --accent-white: #ffffff;
+  --accent-black: #000000;
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: monospace;
+}
+
+body {
+  width: 360px;
+  min-height: 400px;
+  margin: 0;
+  padding: 16px;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.ext-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 14px;
+}
+
+.ext-title {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.02em;
+}
+
+.ext-badge {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.ext-textarea {
+  width: 100%;
+  height: 70px;
+  background-color: var(--bg-inset);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 12px;
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.ext-textarea:focus {
+  border-color: var(--text-primary);
+}
+
+.ext-btn {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: var(--accent-white);
+  color: var(--accent-black);
+  font-weight: 600;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 14px;
+  transition: opacity 0.2s;
+}
+
+.ext-btn:hover {
+  opacity: 0.9;
+}
+
+.ext-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.res-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.res-verdict {
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-block;
+  padding: 3px 8px;
+  background-color: var(--accent-white);
+  color: var(--accent-black);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.res-conf {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-secondary);
+  float: right;
+  margin-top: 4px;
+}
+
+.res-summary {
+  color: var(--text-primary);
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
